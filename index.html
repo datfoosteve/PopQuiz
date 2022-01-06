@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-dark text-light">
+
+    <main>
+
+      <section class="quizTitlePage" data-state="visible">
+        <h1 class="quizTitle">Code Quiz</h1>
+        <p>Answer Questions before the time runs out</p>
+        <button id="Start" class="btnStart">Start</button>
+        <button id="Quit" class="btnQuit">Quit</button>
+      </section>
+
+      <div class="gameTimer" id="countDown">?</div>
+
+      <div class="quesContainer" data-state="hidden">
+        <section class ="quizBlock" data-state="hidden">
+            <div class ="questionBlock" data state="hidden"></div>
+          
+            <button class='A' type="button" value="box1" data-number="1" data-state="hidden">A.</button>
+            
+            <button class='B' type="button" value="box2" data-number="2" data-state="hidden">B.</button>
+            
+            <button class='C' type="button" value="box3" data-number="3" data-state="hidden">C.</button>
+            
+            <button class='D' type="button" value="box4" data-number="4" data-state="hidden">D.</button>
+        </section>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
