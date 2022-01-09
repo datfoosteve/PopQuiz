@@ -19,7 +19,7 @@ const questionEl = document.getElementById("theQuestion");
 let shuffleQuestions, currentQuestion;
 
 
-var gameTimer = 30;
+var gameTimer = 5;
 var timeInterval;
 
 const startButtonEl = document.getElementById("btnStart");
@@ -43,10 +43,11 @@ questionContainer.classList.remove("hide");
       timerEl.textContent = gameTimer + " seconds remaining";
       gameTimer--;
     } else if (gameTimer <= 0) {
+        timerEl.classList.add("hide");
       clearInterval(timeInterval);
-   
-      gameTimer = 30;
       
+      gameTimer = 30;
+      return null;
       // Update Screen that the game is over and timer is cleared
     }
   }, 1000);

@@ -1,12 +1,12 @@
-*{
+* {
   background-color: #9bfff2;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-
-#btnStart,#btnQuit {
+#btnStart,
+#btnQuit {
   display: flex table-column;
-   flex-direction: row;
+  flex-direction: row;
   align-self: center;
   background: radial-gradient(
     circle,
@@ -28,40 +28,38 @@
   margin-top: 0.6em;
 }
 
-#quizTitlePage{
-
+#quizTitlePage {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   border-width: 5px;
   border-radius: 4px;
   border-color: darkslategray;
 }
 
-#quizTitle{
- border-width: 60vw;
-border-color: dimgrey;
+#quizTitle {
+  border-width: 60vw;
+  border-color: dimgrey;
   font: size 80px;
 }
 
-#quizTitle,#startQuitbtn,#directions{
+#quizTitle,
+#startQuitbtn,
+#directions {
   display: flex;
   align-self: center;
   align-content: row;
   border-width: 60vw;
-border-color: dimgrey;
- 
-
+  border-color: dimgrey;
 }
 
-#startQuitbtn{
-display:table-row;
-align-content: center;
-  
+#startQuitbtn {
+  display: table-row;
+  align-content: center;
 }
 
 #countDown {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   margin: 60px auto;
   text-align: center;
   vertical-align: middle;
@@ -90,29 +88,25 @@ align-content: center;
   border-style: groove;
   border-color: #16447062;
   border-width: 5px;
- 
 }
 
-#theQuestion{
-  display:block;
-  margin:20px 20px 50px 20px;
+#theQuestion {
+  display: block;
+  margin: 20px 20px 50px 20px;
   border-color: darkslategray;
   border-width: 5px;
 }
 
-.hide{
-  display:none;
-  
+.hide {
+  display: none;
 }
 
-.btn-grid{
+.btn-grid {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   margin: 20px;
 }
-
-
 
 .Abutton,
 .Cbutton {
@@ -144,21 +138,21 @@ align-content: center;
   padding: 20px 52px;
   text-align: left;
   padding-left: 0;
-  margin:4px;
+  margin: 4px;
 }
 
 .animate {
   animation-duration: 0.75s;
   animation-delay: 0.5s;
   animation-name: animate-fade;
-  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
   animation-fill-mode: backwards;
 }
 
 .animate.pop {
   animation-duration: 0.5s;
   animation-name: animate-pop;
-  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
 }
 
 /* Glow In */
@@ -170,6 +164,19 @@ align-content: center;
 .animate.blur {
   animation-name: animate-blur;
   animation-timing-function: ease;
+}
+.animate.fade-out {
+  animation-name: animate-fade-out;
+  animation-timing-function: ease-out;
+}
+
+@keyframes animate-fade-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes animate-pop {
