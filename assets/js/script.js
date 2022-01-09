@@ -23,17 +23,22 @@ let kadabra = document.querySelector("#qContainer");
 var gameTimer = 30;
 var timeInterval;
 
-const startButtonEl = document.getElementById("Start");
-const aButtonEl = document.querySelector("#btnStart");
+const startButtonEl = document.getElementById("btnStart");
+const endButtonEl = document.getElementById("btnQuit");
+//const aButtonEl = document.querySelector("");
 
 startButtonEl.addEventListener("click", startGame);
+const questionContainer = document.getElementById("qContainer")
 
-
+startButtonEl.classList.remove("hide");
+endButtonEl.classList.remove("hide");
 
 function startGame() {
 startButtonEl.classList.add("hide");
-  abra.style.visibility = "visible";
-  kadabra.style.visibility = "visible";
+questionContainer.classList.remove("hide");
+
+  //abra.style.visibility = "visible";
+  //kadabra.style.visibility = "visible";
   timeInterval = setInterval(function () {
     if (gameTimer >= 1) {
       // Update screen with new time
@@ -41,8 +46,8 @@ startButtonEl.classList.add("hide");
       gameTimer--;
     } else if (gameTimer <= 0) {
       clearInterval(timeInterval);
-      abra.style.visibility = "hidden";
-      kadabra.style.visibility = "hidden";
+    //   abra.style.visibility = "hidden";
+    //   kadabra.style.visibility = "hidden";
       gameTimer = 30;
       
       // Update Screen that the game is over and timer is cleared

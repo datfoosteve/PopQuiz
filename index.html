@@ -7,21 +7,21 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
 
-  <body class="bg-dark text-light">
+  <body>
     <main>
-      <section class="quizTitlePage">
-        <h1 class="quizTitle">Code Quiz</h1>
+      <section id= "quizTitlePage">
+        <h1 id="quizTitle">Code Quiz</h1>
         <p>Answer Questions before the time runs out</p>
         <button id="btnStart" class="hide">Start</button>
         <button id="btnQuit" class="hide">Quit</button>
       </section>
 
-      <div class="gWrapper" id="gameTimerWrapper">
-        <div class="gameTimer" id="countDown"></div>
-      </div>
+     
+        <div id="countDown" class="hide"></div>
+      
 
-      <div class="quesContainer" id="qContainer">
-        <div class="questionBlock" type="theQuestion">question</div>
+      <div id="qContainer" class="hide">
+        <div id="theQuestion">question</div>
         <div class="btn-grid">
         <button
           class="Abutton"
