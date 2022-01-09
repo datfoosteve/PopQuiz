@@ -37,6 +37,8 @@ timerEl.classList.remove("hide");
 startButtonEl.classList.add("hide");
 questionContainer.classList.remove("hide");
 
+shuffleQuestions = questionList.sort(()=> Math.random() - .5)
+nextQuestion();
   timeInterval = setInterval(function () {
     if (gameTimer >= 1) {
       // Update screen with new time
@@ -53,7 +55,9 @@ questionContainer.classList.remove("hide");
   }, 1000);
 }
 
-function nextQuestion() {}
+function nextQuestion() {
+    displayQuestion(shuffleQuestions[currentQuestion])
+}
 
 function userAnswerCorrect() {}
 
@@ -61,73 +65,73 @@ const questionList = [
   {
     question: "What is the meaning of life",
     answers: [
-      (questionA = { text: "", correct: false }),
-      (questionB = { text: "", correct: false }),
-      (questionC = { text: "", correct: false }),
-      (questionD = { text: "", correct: false }),
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
     ],
   },
   {
     question: "What is the meaning of life",
     answers: [
-      (questionA = { text: "", correct: false }),
-      (questionB = { text: "", correct: false }),
-      (questionC = { text: "", correct: false }),
-      (questionD = { text: "", correct: false }),
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
     ],
   },
   {
     question: "What is the meaning of life",
     answers: [
-      (questionA = { text: "", correct: false }),
-      (questionB = { text: "", correct: false }),
-      (questionC = { text: "", correct: false }),
-      (questionD = { text: "", correct: false }),
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
     ],
   },
   {
     question: "What is the meaning of life",
     answers: [
-      (questionA = { text: "", correct: false }),
-      (questionB = { text: "", correct: false }),
-      (questionC = { text: "", correct: false }),
-      (questionD = { text: "", correct: false }),
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
     ],
   },
   {
     question: "What is the meaning of life",
     answers: [
-      (questionA = { text: "", correct: false }),
-      (questionB = { text: "", correct: false }),
-      (questionC = { text: "", correct: false }),
-      (questionD = { text: "", correct: false }),
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
     ],
   },
   {
     question: "What is the meaning of life",
     answers: [
-      (questionA = { text: "", correct: false }),
-      (questionB = { text: "", correct: false }),
-      (questionC = { text: "", correct: false }),
-      (questionD = { text: "", correct: false }),
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
     ],
   },
   {
     question: "What is the meaning of life",
     answers: [
-      (questionA = { text: "", correct: false }),
-      (questionB = { text: "", correct: false }),
-      (questionC = { text: "", correct: false }),
-      (questionD = { text: "", correct: false }),
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
     ],
   },
   {
     question: "What is the meaning of life",
     answers: [
-      (questionA = { text: "", correct: false }),
-      (questionB = { text: "", correct: false }),
-      (questionC = { text: "", correct: false }),
-      (questionD = { text: "", correct: false }),
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
+      { text: "", correct: false },
     ],
   },
 ];
