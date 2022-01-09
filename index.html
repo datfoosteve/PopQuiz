@@ -8,30 +8,60 @@
   </head>
 
   <body class="bg-dark text-light">
-
     <main>
-
-      <section class="quizTitlePage" data-state="visible">
+      <section class="quizTitlePage">
         <h1 class="quizTitle">Code Quiz</h1>
         <p>Answer Questions before the time runs out</p>
         <button id="Start" class="btnStart">Start</button>
         <button id="Quit" class="btnQuit">Quit</button>
       </section>
 
-      <div class="gameTimer" id="countDown">?</div>
+      <div class="gWrapper" id="gameTimerWrapper">
+        <div class="gameTimer" id="countDown"></div>
+      </div>
 
-      <div class="quesContainer" data-state="hidden">
-        <section class ="quizBlock" data-state="hidden">
-            <div class ="questionBlock" data state="hidden"></div>
-          
-            <button class='A' type="button" value="box1" data-number="1" data-state="hidden">A.</button>
-            
-            <button class='B' type="button" value="box2" data-number="2" data-state="hidden">B.</button>
-            
-            <button class='C' type="button" value="box3" data-number="3" data-state="hidden">C.</button>
-            
-            <button class='D' type="button" value="box4" data-number="4" data-state="hidden">D.</button>
-        </section>
+      <div class="quesContainer" id="qContainer">
+        <div class="questionBlock" type="theQuestion">question</div>
+
+        <button
+          class="Abutton"
+          type="button"
+          id="A"
+          data-number="1"
+          data-state="hidden"
+        >
+          A.
+        </button>
+
+        <button
+          class="Bbutton"
+          type="button"
+          value="box2"
+          data-number="2"
+          data-state="hidden"
+        >
+          B.
+        </button>
+
+        <button
+          class="Cbutton"
+          type="button"
+          value="box3"
+          data-number="3"
+          data-state="hidden"
+        >
+          C.
+        </button>
+
+        <button
+          class="Dbutton"
+          type="button"
+          value="box4"
+          data-number="4"
+          data-state="hidden"
+        >
+          D.
+        </button>
       </div>
     </main>
 

@@ -1,59 +1,85 @@
-button {
-    background: radial-gradient(circle, rgba(240,230,140,1) 0%, rgba(187,96,33,0.9542191876750701) 100%);
-    border-radius: 8px;
-    color: #13293d;
-    cursor: pointer;
-    font-size: 2em;
-    letter-spacing: 0.21px;
-    line-height: 16px;
-    max-width: 255px;
-    padding: 20px 52px;
-    text-align: center;
-    transition-duration: 0.15s;
-    transition-property: background-color;
-    transition-timing-function: linear;
-    margin-top: 0.6em;
-  }
-
-  .quesContainer {
-    display: block;
-    margin: 60px auto;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 80vw;
-    background-color: #f0ead6;
-    padding-top: 20px;
-  }
-
-  .gameTimer{
-    display: block;
-    margin: 60px auto;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.9s;
-    width: 80vw;
-    background-color: #4bbaab;
-    padding-top: 20px;
-  }
-
-  .A,.B,.C,.D,.questionBlock{
-      table-layout: grid;
-      margin: 60px;
-  }
+.btnStart,.btnQuit {
+  background: radial-gradient(
+    circle,
+    rgb(144, 230, 241) 0%,
+    rgba(5, 255, 201, 0.954) 100%
+  );
+  border-radius: 8px;
+  color: #13293d;
+  cursor: pointer;
+  font-size: 2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 255px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  margin-top: 0.6em;
+}
 
 
-  .questionBlock{
-    display: block;
-    margin: 60px auto;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 80vw;
-    background-color: #f0ead6;
-    padding-top: 20px;
 
-  }
+
+.quizTitlePage,
+h1.quizTitle,
+.btnStart,.btnQuit {
+  align-content: center;
+}
+
+.gWrapper {
+  visibility: hidden;
+}
+
+.gameTimer {
+  display: block;
+  margin: 60px auto;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  width: 20vw;
+  background-color: #4bbaab;
+  padding-top: 20px;
+}
+
+.quesContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px auto auto;
+  justify-content: flex;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 80vw;
+  background-color: #f0ead6;
+  padding-top: 20px;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+.questionBlock {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.Abutton,
+.Cbutton {
+  grid-column-start: 1;
+}
+
+.Bbutton,
+.Dbutton {
+  grid-column-start: 2;
+}
+
+.Abutton,
+.Bbutton,
+.Cbutton,
+.Dbutton {
+  text-align: left;
+  padding-left: 0;
+}
