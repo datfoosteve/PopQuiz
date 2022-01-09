@@ -13,13 +13,12 @@
 //Final conditions is when the timer reaches 0 or all the questions are answers
 // Then - use local storage to store initials (string) of the player.
 var mainEl = document.getElementById("#main");
-let timerEl = document.querySelector("#countDown");
+let timerEl = document.getElementById("countDown");
 
 const questionEl = document.getElementById("theQuestion");
 let shuffleQuestions, currentQuestion;
 
-let abra = document.querySelector("#gameTimerWrapper");
-let kadabra = document.querySelector("#qContainer");
+
 var gameTimer = 30;
 var timeInterval;
 
@@ -37,8 +36,6 @@ function startGame() {
 startButtonEl.classList.add("hide");
 questionContainer.classList.remove("hide");
 
-  //abra.style.visibility = "visible";
-  //kadabra.style.visibility = "visible";
   timeInterval = setInterval(function () {
     if (gameTimer >= 1) {
       // Update screen with new time
@@ -46,8 +43,7 @@ questionContainer.classList.remove("hide");
       gameTimer--;
     } else if (gameTimer <= 0) {
       clearInterval(timeInterval);
-    //   abra.style.visibility = "hidden";
-    //   kadabra.style.visibility = "hidden";
+   
       gameTimer = 30;
       
       // Update Screen that the game is over and timer is cleared

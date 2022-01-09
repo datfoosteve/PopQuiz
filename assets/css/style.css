@@ -2,7 +2,9 @@
   background-color: #9bfff2;
 }
 
+
 #btnStart,#btnQuit {
+  flex-direction: row 2;
   align-self: center;
   background: radial-gradient(
     circle,
@@ -25,13 +27,16 @@
 }
 
 #quizTitlePage{
+
+  display: flexbox;
+
   justify-content:center;
-  display: inline-block;
 }
 
 #quizTitle{
   display: block;
   align-self: center;
+ 
 
 }
 
