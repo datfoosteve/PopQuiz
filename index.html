@@ -4,65 +4,63 @@
     <meta charset="UTF-8" />
     <title>Code Quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron:wght@777&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
 
-  <body>
+  <body class="animate pop glow delay-9">
     <main>
-      <section id= "quizTitlePage">
+      <section id="quizTitlePage" class="animate pop glow blur delay-5">
         <h1 id="quizTitle">Code Quiz</h1>
-        <p>Answer Questions before the time runs out</p>
-        <button id="btnStart" class="hide">Start</button>
-        <button id="btnQuit" class="hide">Quit</button>
+        <p id="directions" class="animate pop glow blur delay-3">Answer the questions before time runs out</p>
+        <div id="startQuitbtn">
+          <button id="btnStart" class="hide animate pop glow blur delay-9">Start</button>
+          <button id="btnQuit" class="hide animate pop glow blur delay-9">Quit</button>
+        </div>
       </section>
 
-     
-        <div id="countDown" class="hide"></div>
-      
+      <div id="countDown" class="hide animate pop glow blur delay-8"></div>
 
-      <div id="qContainer" class="hide">
+      <div id="qContainer" class="hide animate pop glow blur delay-9">
         <div id="theQuestion">question</div>
-        <div class="btn-grid">
-        <button
-          class="Abutton"
-          type="button"
-          id="A"
-          data-number="1"
-          data-state="hidden"
-        >
-          A.
-        </button>
+        <div class="btn-grid animate pop glow delay-5">
+          <button
+            class="Abutton animate pop glow delay-4"
+            type="button"
+            id="A"
+          >
+            A.
+          </button>
 
-        <button
-          class="Bbutton"
-          type="button"
-          value="box2"
-          data-number="2"
-          data-state="hidden"
-        >
-          B.
-        </button>
+          <button
+            class="Bbutton animate pop glow delay-5"
+            type="button"
+            value="box2"
+          >
+            B.
+          </button>
 
-        <button
-          class="Cbutton"
-          type="button"
-          value="box3"
-          data-number="3"
-          data-state="hidden"
-        >
-          C.
-        </button>
+          <button
+            class="Cbutton animate pop glow delay-6"
+            type="button"
+            value="box3"
+          >
+            C.
+          </button>
 
-        <button
-          class="Dbutton"
-          type="button"
-          value="box4"
-          data-number="4"
-          data-state="hidden"
-        >
-          D.
-        </button>
-      </div>
+          <button
+            class="Dbutton animate pop glow delay-7"
+            type="button"
+            value="box4"
+          >
+            D.
+          </button>
+        </div>
       </div>
     </main>
 

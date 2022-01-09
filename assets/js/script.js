@@ -12,7 +12,7 @@
 
 //Final conditions is when the timer reaches 0 or all the questions are answers
 // Then - use local storage to store initials (string) of the player.
-var mainEl = document.getElementById("#main");
+var mainEl = document.getElementById("main");
 let timerEl = document.getElementById("countDown");
 
 const questionEl = document.getElementById("theQuestion");
@@ -33,6 +33,7 @@ startButtonEl.classList.remove("hide");
 endButtonEl.classList.remove("hide");
 
 function startGame() {
+timerEl.classList.remove("hide");
 startButtonEl.classList.add("hide");
 questionContainer.classList.remove("hide");
 
