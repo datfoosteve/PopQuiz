@@ -13,56 +13,43 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
 
-  <body class="animate pop glow delay-9">
-    <main>
-      <section id="quizTitlePage" class="animate pop glow blur delay-5">
-        <h1 id="quizTitle">Code Quiz</h1>
-        <p id="directions" class="animate pop glow blur delay-3">Answer the questions before time runs out</p>
-        <div id="startQuitbtn">
-          <button id="btnStart" class="hide animate pop glow blur delay-9">Start</button>
-          <button id="btnQuit" class="hide animate pop glow blur delay-9">Quit</button>
-        </div>
-      </section>
-
-      <div id="countDown" class="hide animate pop glow blur delay-8"></div>
-
-      <div id="qContainer" class="hide animate pop glow blur delay-9">
-        <div id="theQuestion">question</div>
-        <div class="btn-grid animate pop glow delay-5">
-          <button
-            class="Abutton animate pop glow delay-4"
-            type="button"
-            id="A"
-          >
-            A.
-          </button>
-
-          <button
-            class="Bbutton animate pop glow delay-5"
-            type="button"
-            value="box2"
-          >
-            B.
-          </button>
-
-          <button
-            class="Cbutton animate pop glow delay-6"
-            type="button"
-            value="box3"
-          >
-            C.
-          </button>
-
-          <button
-            class="Dbutton animate pop glow delay-7"
-            type="button"
-            value="box4"
-          >
-            D.
-          </button>
-        </div>
+  <body>
+    <section id="quizTitlePage" class="animate pop glow blur delay-5">
+      <h1 id="quizTitle">Code Quiz</h1>
+      <p id="directions" class="animate pop glow blur delay-3">
+        Answer the questions before time runs out
+      </p>
+      <div id="startQuitbtn">
+        <button id="btnStart" class="hide animate pop glow blur delay-9">
+          Start
+        </button>
+        <button id="btnQuit" class="hide animate pop glow blur delay-9">
+          Quit
+        </button>
       </div>
-    </main>
+    </section>
+
+    <div id="countDown" class="hide animate pop glow blur delay-8"></div>
+
+    <div id="qContainer" class="hide animate pop glow blur delay-9">
+      <div id="theQuestion">question</div>
+      <div id="answer-buttons" class="btn-grid animate pop glow delay-5">
+        <button class="answerButton" type="button" id="btn">A.</button>
+
+        <button class="answerButton" type="button" value="box2" id="btn">
+          B.
+        </button>
+
+        <button class="answerButton" type="button" value="box3" id="btn">
+          C.
+        </button>
+
+        <button class="answerButton" type="button" value="box4" id="btn">
+          D.
+        </button>
+      </div>
+      <button id="next" class="next btn hide">next</button>
+    </div>
 
     <script src="./assets/js/script.js"></script>
   </body>
